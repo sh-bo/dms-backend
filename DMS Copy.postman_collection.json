@@ -1,0 +1,1085 @@
+{
+	"info": {
+		"_postman_id": "66d473fc-9c76-4fb6-a525-07fccfe6d301",
+		"name": "DMS Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29899062"
+	},
+	"item": [
+		{
+			"name": "BranchMaster",
+			"item": [
+				{
+					"name": "CreateBranchMaster",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FindAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/branchmaster/findAll",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"branchmaster",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/branchmaster/findById/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"branchmaster",
+								"findById",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletebyid",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/branchmaster/delete/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"branchmaster",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatedbyid",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Noida office\",\r\n    \"address\": \"Sector 29 ,Gurgoan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/branchmaster/update/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"branchmaster",
+								"update",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CategoryMaster",
+			"item": [
+				{
+					"name": "Save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Refrigrator\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/CategoryMaster/save",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CategoryMaster",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/CategoryMaster/findAll",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CategoryMaster",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/CategoryMaster/findById/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CategoryMaster",
+								"findById",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Refrigrator\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/CategoryMaster/update/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CategoryMaster",
+								"update",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletebyId",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/CategoryMaster/delete/9",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"CategoryMaster",
+								"delete",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "YearMaster",
+			"item": [
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"2022-2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/YearMaster/save",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"YearMaster",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatebyid",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"2021-2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/YearMaster/update/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"YearMaster",
+								"update",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/YearMaster/findAll",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"YearMaster",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findBYId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/YearMaster/findById/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"YearMaster",
+								"findById",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TypeMaster",
+			"item": [
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"msword\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/TypeMaster/save",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TypeMaster",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/TypeMaster/update/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TypeMaster",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/TypeMaster/findAll",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TypeMaster",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/TypeMaster/findById/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TypeMaster",
+								"findById",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/TypeMaster/delete/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"TypeMaster",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RoleMaster",
+			"item": [
+				{
+					"name": "save",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateRoleStatus",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"isActive\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/RoleMaster/updatestatus/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RoleMaster",
+								"updatestatus",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DepartmentMaster",
+			"item": [
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"IT Department\",\r\n    \"createdOn\": \"2023-07-23T10:00:00\",\r\n    \"updatedOn\": \"2023-07-23T10:00:00\",\r\n    \"isActive\": 1,\r\n    \"branch\": {\r\n        \"id\": 7\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/DepartmentMaster/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"DepartmentMaster",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Sales\",\r\n    \"isActive\": 1,\r\n    \"branch\": {\r\n        \"id\": 4\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/DepartmentMaster/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"DepartmentMaster",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/DepartmentMaster/findAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"DepartmentMaster",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/DepartmentMaster/findById/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"DepartmentMaster",
+								"findById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "RegisterEmployee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJraXNob3JAZ21haWwuY29tIiwiZXhwIjoxNzIyOTIwNjI4LCJpYXQiOjE3MjI5MTcwMjh9.dUbguLDtKOwEn6nHbkeEbT4itZBYUE8UUBq-zVs-E2g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"employeeId\": \"E004\",\r\n  \"password\": \"12345\",\r\n  \"mobile\": \"1234567890\",\r\n  \"email\": \"manish@gmail.com\",\r\n  \"name\": \"manish tomar\",\r\n  \"isActive\": 1,\r\n  \"otp\": 1234,\r\n  \"createdOn\": \"2024-07-23T14:31:25\",\r\n  \"updatedOn\": \"2024-07-23T14:31:25\",\r\n  \"department\": {\r\n    \"id\": 6,\r\n    \"name\": \"Support\"\r\n  },\r\n  \"branch\": {\r\n    \"id\": 5,\r\n    \"name\": \"Japan \"\r\n  },\r\n  \"roles\": [\r\n    {\r\n      \"id\": 4,\r\n      \"role\": \"User\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/register/newRegister",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"register",
+								"newRegister"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "RegisterEmployee",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 1,\r\n  \"employeeId\": \"E004\",\r\n  \"password\": \"12345\",\r\n  \"mobile\": \"1234567890\",\r\n  \"email\": \"manish@gmail.com\",\r\n  \"name\": \"manish tomar\",\r\n  \"isActive\": 1,\r\n  \"otp\": 1234,\r\n  \"createdOn\": \"2024-07-23T14:31:25\",\r\n  \"updatedOn\": \"2024-07-23T14:31:25\",\r\n  \"department\": {\r\n    \"id\": 6,\r\n    \"name\": \"Support\"\r\n  },\r\n  \"branch\": {\r\n    \"id\": 5,\r\n    \"name\": \"Japan \"\r\n  },\r\n  \"roles\": [\r\n    {\r\n      \"id\": 4,\r\n      \"role\": \"User\"\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/register/newRegister",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"register",
+										"newRegister"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "EmployeeSavedBySystemAdmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJraXNob3JAZ21haWwuY29tIiwiZXhwIjoxNzIyODYyMjUxLCJpYXQiOjE3MjI4NTg2NTF9.6_pVmJR3kuMiwavM0dilg9Bgz9jEhPHoM4kKGL0hTEg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n  \"employeeId\": \"E001\",\r\n  \"password\": \"password123\",\r\n  \"mobile\": \"1234567890\",\r\n  \"email\": \"Hrithik@example.com\",\r\n  \"name\": \"Hrithik\",\r\n  \"isActive\": 1,\r\n  \"otp\": 1234,\r\n  \"department\": {\r\n    \"id\": 1,\r\n    \"name\":\"Support software Developer\"\r\n  },\r\n  \"branch\": {\r\n    \"id\": 1,\r\n    \"name\":\"Ghaziababd\"\r\n  },\r\n  \"roles\": [\r\n    {\r\n      \"role\": \"Engineer\",\r\n      \"isActive\": 1\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/Employee/saved",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"Employee",
+								"saved"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"employeeId\": \"E031\",\r\n   //\"password\": \"\",\r\n  \"mobile\": \"1234567890\",\r\n  \"email\": \"vipeso1554@ndiety.com\",\r\n  \"name\": \"vipe\",\r\n  \"isActive\": 1,\r\n  \r\n  \"createdOn\": \"2024-07-23T14:31:25\",\r\n  \"updatedOn\": \"2024-07-23T14:31:25\",\r\n  \"department\": {\r\n    \"id\": 6,\r\n    \"name\": \"Support\"\r\n  },\r\n  \"branch\": {\r\n    \"id\": 5,\r\n    \"name\": \"Japan \"\r\n  },\r\n  \"roles\": [\r\n    {\r\n      \"id\": 7,\r\n      \"role\": \"employee\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/register/newRegister",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"register",
+								"newRegister"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DashBoard",
+			"item": [
+				{
+					"name": "GetAllDashboard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DocumentHeader",
+			"item": [
+				{
+					"name": "SaveDocumentHeader",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Document Title\",\r\n  \"fileNo\": \"12345\",\r\n  \"subject\": \"Document Subject\",\r\n  \"version\": \"1.0\",\r\n  \"createdOn\": \"2024-07-25T10:00:00\",\r\n  \"updatedOn\": \"2024-07-25T10:00:00\",\r\n  \"category\": {\r\n    \"id\": 1\r\n  },\r\n  \"year\": {\r\n    \"id\": 2\r\n  },\r\n  \"type\": {\r\n    \"id\": 2\r\n  },\r\n  \"employee\": {\r\n    \"id\": 6\r\n  },\r\n  \"department\": {\r\n    \"id\": 1\r\n  },\r\n  \"branch\": {\r\n    \"id\": 4\r\n  },\r\n  \"isApproved\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/DocumentHeader/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"DocumentHeader",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateDocumentStatus",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"approved\":false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/DocumentHeader/updatestatus/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"DocumentHeader",
+								"updatestatus",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllApprovedStatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/DocumentHeader/getAllApprovedStatus?Authorization=Bearer ",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"DocumentHeader",
+								"getAllApprovedStatus"
+							],
+							"query": [
+								{
+									"key": "Authorization",
+									"value": "Bearer "
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllPendingDocument",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllDocumentHeader",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJraXNob3JAZ21haWwuY29tIiwiZXhwIjoxNzIyNjE2Mzc3LCJpYXQiOjE3MjI2MTI3Nzd9.yMLymG3Qy3hcdW9Y22fFCR8yv7CjygzZDBkEQOOkLqQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/DocumentHeader/findAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"DocumentHeader",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetApprovedDocById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJraXNob3JAZ21haWwuY29tIiwiZXhwIjoxNzIyNjE2Mzc3LCJpYXQiOjE3MjI2MTI3Nzd9.yMLymG3Qy3hcdW9Y22fFCR8yv7CjygzZDBkEQOOkLqQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/DocumentHeader/doc/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"DocumentHeader",
+								"doc",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "uploadFile",
+			"item": [
+				{
+					"name": "uploadFileAndDocument",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/kisho/OneDrive/Pictures/Screenshots/Screenshot (2).png"
+								},
+								{
+									"key": "title",
+									"value": "Sample Document",
+									"type": "text"
+								},
+								{
+									"key": "subject",
+									"value": "Test Subject",
+									"type": "text"
+								},
+								{
+									"key": "documentHeaderCategoryId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "documentHeaderYearId",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "documentHeaderTypeId",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/documents/save/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"documents",
+								"save",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login/Logout",
+			"item": [
+				{
+					"name": "Login and Get Token",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"saubhagya\",\r\n  \"email\": \"saubhagya@gmail.com\",\r\n  \"password\": \"123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OTP",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"felije2880@acpeak.com\",\r\n    \"otp\":628454\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/auth/verifyOtp",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"verifyOtp"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
